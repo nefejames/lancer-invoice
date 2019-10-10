@@ -47,7 +47,7 @@
         display: flex;
         justify-content: center;
         padding: 0.5rem;
-        font-size: 1rem; /*28px on pc*/
+        font-size: 1.2rem;
       }
 
       li:first-child,
@@ -88,6 +88,10 @@
         border: 5px solid #0abab5;
       }
 
+      .invoice-container {
+        margin: 12rem auto 0;
+        width: 90%;
+      }
       /*invoice navbar menu styles*/
       .invoice-navbar {
         width: 97%;
@@ -113,12 +117,16 @@
         background: #00ffa3;
         text-transform: uppercase;
         font-weight: 600;
+        width: 170px;
+        font-size: 18px;
       }
 
       .invoice-navbar .edit-settings {
         color: #b1b1b1;
         background: none;
         text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
       }
 
       .invoice-top {
@@ -135,6 +143,7 @@
         font-style: normal;
         font-size: 1.2rem;
         margin-bottom: 2rem;
+        margin-top: -2.2rem;
       }
 
       address h3 {
@@ -142,8 +151,9 @@
       }
 
       .invoice-amount h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
         display: flex;
+        margin: 1rem 0;
       }
 
       .invoice-amount h1 span {
@@ -156,6 +166,12 @@
       .issue-date p:first-child,
       .due-date p:first-child {
         color: #b1b1b1;
+        font-size: 1rem;
+      }
+
+      .date p:nth-child(2) {
+        font-size: 1.1rem;
+        font-weight: 600;
       }
 
       .issue-date p:first-child,
@@ -187,7 +203,8 @@
 
       /*invoice table styles*/
       .invoice-name {
-        margin-top: 3rem;
+        font-size: 1rem;
+        margin-top: 2rem;
       }
 
       .invoice-name h2 {
@@ -196,11 +213,9 @@
 
       .invoice-name h2 span {
         color: #b1b1b1;
-        font-size: 1.1rem;
       }
 
       .invoice-name p {
-        font-size: 1.3rem;
         font-weight: 600;
       }
 
@@ -227,43 +242,41 @@
 
       table tr {
         text-align: left;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       /*footer styles*/
       footer {
         padding: 1rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         border-top: 1px solid #b1b1b1;
       }
       /*media queries*/
 
       @media screen and (min-width: 250px) and (max-width: 500px) {
         table {
-          font-size: 0.7rem;
+          font-size: 1rem;
           margin-left: -0.5rem;
         }
       }
 
       @media screen and (min-width: 700px) {
+        ul li {
+          padding: 1rem;
+          /*  */
+        }
         main {
           width: 85%;
           margin-top: 8rem;
         }
 
-        .invoice-container {
-          width: 90%;
-          margin: 0 auto;
-        }
-
         .invoice-top {
           width: 100%;
           flex-direction: row;
-          /* justify-content: space-between; */
         }
 
-        .invoice-top address {
-          font-size: 1.3rem;
+        .invoice-name {
+          margin-top: rem;
         }
 
         address h3 {
@@ -281,17 +294,17 @@
         }
 
         table tr {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
 
         footer {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
         }
       }
 
       @media screen and (min-width: 1100px) {
         main {
-          width: 40%;
+          width: 50%;
           margin-top: 8rem;
         }
       }
@@ -330,7 +343,7 @@
           </div>
           <div class="invoice-amount">
             <p>Amount Due</p>
-            <h1>US$8,800.000 <span>usd</span></h1>
+            <h1>US$8,800 <span>usd</span></h1>
             <div class="invoice-date">
               <div class="issue-date date">
                 <p>issued</p>
@@ -366,26 +379,26 @@
               <tr class="bordered">
                 <td>Mobile App UI</td>
                 <td>1</td>
-                <td>US$8,800.00</td>
-                <td>US$8,800.00</td>
+                <td>US$8,800</td>
+                <td>US$8,800</td>
               </tr>
               <tr>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
                 <th>Subtotal</th>
-                <td>US$8,800.00</td>
+                <td>US$8,800</td>
               </tr>
               <tr>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
                 <th>Total</th>
-                <td>US$8,800.00</td>
+                <td>US$8,800</td>
               </tr>
               <tr>
                 <td>&nbsp</td>
                 <td>&nbsp</td>
                 <th>Amount Due</th>
-                <td>US$8,800.00</td>
+                <td>US$8,800</td>
               </tr>
             </tbody>
           </table>
@@ -398,24 +411,3 @@
     </main>
   </body>
 </html>
-
-<!--============================================DESIGN DETAILS=================================================-->
-
-<!--
-  ===BODY DETAILS===
-  body bg color: #F2F3F3;
--->
-
-<!--
-  ===MAIN NAV DETAILS===
-  nav icons bg color: #c4c4c4
-  nav text color: #262626;
-  send invoice bg color: #0ABAB5;
-  send invoice text color: #fff / white;
--->
-
-<!--======================================INVOICE DETAILS==================================-->
-<!--
-  invoice bg color: #fff;
-
--->
