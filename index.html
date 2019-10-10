@@ -40,15 +40,14 @@
 
       li {
         cursor: pointer;
-        padding: 1rem;
         color: #262626;
         list-style: none;
         font-weight: 600;
         border-right: 2px solid #c4c4c4;
         display: flex;
         justify-content: center;
-        padding: 1rem;
-        font-size: 1.3rem; /*28px on pc*/
+        padding: 0.5rem;
+        font-size: 1rem; /*28px on pc*/
       }
 
       li:first-child,
@@ -84,8 +83,8 @@
         background: white;
         margin-top: 3.5rem;
         align-self: center;
-        padding: 1rem 1rem 0;
-        padding-bottom: 20rem;
+        padding: 1rem 1rem;
+
         border: 5px solid #0abab5;
       }
 
@@ -190,6 +189,11 @@
       .invoice-name {
         margin-top: 3rem;
       }
+
+      .invoice-name h2 {
+        margin-bottom: 0.5rem;
+      }
+
       .invoice-name h2 span {
         color: #b1b1b1;
         font-size: 1.1rem;
@@ -201,18 +205,19 @@
       }
 
       table {
-        width: 80%;
+        width: 100%;
         margin: 2rem auto 10rem;
         border-collapse: collapse;
       }
 
-      table th,
-      table td {
-        padding: 1rem;
+      thead th,
+      tbody tr:first-child td {
+        padding: 1rem 1rem 1rem 0;
       }
 
-      thead th {
-        font-size: 1rem;
+      tbody tr:not(:first-child) td,
+      tbody tr:not(:first-child) th {
+        padding: 0.3rem 0;
       }
 
       table thead th,
@@ -221,8 +226,8 @@
       }
 
       table tr {
-        /* color: green; */
         text-align: left;
+        font-size: 0.8rem;
       }
 
       /*footer styles*/
@@ -232,6 +237,7 @@
         border-top: 1px solid #b1b1b1;
       }
       /*media queries*/
+
       @media screen and (min-width: 250px) and (max-width: 500px) {
         table {
           font-size: 0.7rem;
@@ -241,7 +247,8 @@
 
       @media screen and (min-width: 700px) {
         main {
-          width: 70%;
+          width: 85%;
+          margin-top: 8rem;
         }
 
         .invoice-container {
@@ -273,12 +280,19 @@
           margin: 0 1rem 0 0;
         }
 
-        table {
-          font-size: 1.3rem;
+        table tr {
+          font-size: 1.2rem;
         }
 
         footer {
           font-size: 1.3rem;
+        }
+      }
+
+      @media screen and (min-width: 1100px) {
+        main {
+          width: 40%;
+          margin-top: 8rem;
         }
       }
     </style>
@@ -288,7 +302,7 @@
       <ul>
         <li><i class="material-icons">close</i></li>
         <li><i class="material-icons">arrow_back_ios</i></li>
-        <li>Save and Close</li>
+        <li>Save & Close</li>
         <li>Invoice</li>
         <li class="nav-btn">send invoice</li>
       </ul>
