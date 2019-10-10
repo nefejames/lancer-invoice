@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style type="text/css">
+        /* Use Prefix */
+        .ify-nav{
+            background: #fff !important;
+            padding:0 !important;
+            box-shadow: 1px 1px 1px #d4d2d2;
+        }
+        .ify-green-color{
+            color:#0ABAB5;
+        }
+
+        .ify-ul{
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .ifyn-item .nav-link{
+            padding:0 !important;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color:#000 !important
+        }
+
+        .ify-close-nav-item{
+            flex:1 !important;
+            border-right: 3px solid #e5e5e5;
+            font-size: 1.2rem;
+        }
+        .ify-back-nav-item{
+            flex:1 !important;
+            border-right: 3px solid #e5e5e5;
+            font-size: 1.2rem;
+        }
+        .ify-save-nav-item{
+            flex: 4 !important;
+            border-right: 3px solid #e5e5e5;
+        }
+        .ify-send-invoice-item{
+            flex: 5 !important;
+        }
+        .ify-ul .nav-item{
+            flex: 12;
+            text-align: center;
+        }
+
+        .ify-btn{
+            width:100%;
+            padding:1rem 0;
+            border:none;
+            background: #fff;
+        }
+
+        .ify-btn:focus {outline:0;}
+
+        .ify-save-btn{
+            font-weight: bold;
+        } 
+        
+        .ify-invoice-link{
+            padding: 1rem 0;
+        }
+
+        .ify-send-invoice-btn{
+            background-color:#0ABAB5;
+            width:100%;
+            height: 100%;
+            border:none;
+            font-weight: bold;
+         }
+
+         .ify-send-invoice-btn .nav-link{
+             color:#fff !important;
+         }
+
+         @media (max-width: 800px){
+             .ify-nav .navbar-toggler{
+                 border:none !important;
+             }
+             .ify-nav .navbar-toggler{
+                 outline: 0;
+             }
+             .ifyn-item{
+                 border-bottom: 2px solid #e5e5e5;
+             }
+         }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ify-nav justify-content-around">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ify-ul">
+          <li class="nav-item ifyn-item ify-close-nav-item">
+            <a class="nav-link" href="#"><button class="ify-btn ify-close-btn">X</button></a>
+          </li>
+          <li class="nav-item ifyn-item ify-back-nav-item">
+            <a class="nav-link" href="#"><button class="ify-btn ify-back-btn"><</button></a>
+          </li>
+          <li class="nav-item ifyn-item ify-save-nav-item">
+            <a class="nav-link" href="#"><button class="ify-btn ify-save-btn">Save & Close</button></a>
+          </li>
+          <li class="nav-item ifyn-item ify-invoice-link">
+            <a class="nav-link" href="#">Invoice </a>
+          </li>
+          <li class="nav-item ifyn-item ify-send-invoice-item">
+            <a class="nav-link" href="#"><button class="ify-btn ify-send-invoice-btn">SEND INVOICE</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
